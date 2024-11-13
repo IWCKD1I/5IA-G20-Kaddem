@@ -9,7 +9,7 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
 
   mysql:
-    image: mysql:8.0-arm64  # Use the ARM64-compatible MySQL 8.0 image
+    image: arm64v8/mysql
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: exampledb
