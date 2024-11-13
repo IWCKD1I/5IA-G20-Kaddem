@@ -46,7 +46,7 @@ class EtudiantServiceImplTest {
     @Test
     void testRetrieveAllEtudiants() {
         List<Etudiant> etudiants = new ArrayList<>();
-        etudiants.add(new Etudiant());
+        etudiants.add(new Etudiant()); // Ajoutez des objets Etudiant si nécessaire
         when(etudiantRepository.findAll()).thenReturn(etudiants);
 
         List<Etudiant> result = etudiantService.retrieveAllEtudiants();
