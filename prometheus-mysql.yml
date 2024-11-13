@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   prometheus:
     image: prom/prometheus
@@ -8,10 +9,9 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
 
   mysql:
-    image: mysql:8.0  # Use MySQL 8.0 for ARM64 compatibility
+    image: mysql:8.0-arm64  # Use the ARM64-compatible MySQL 8.0 image
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: exampledb
     ports:
       - "3306:3306"
-
