@@ -9,8 +9,7 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
 
   mysql:
-    platform: linux/x86_64
-    image: mysql:8.0
+    image: mysql/mysql-server:8.0.23
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: exampledb
