@@ -3,7 +3,7 @@ version: '3.8'
 services:
   # MySQL Service
   db:
-    image: mysql:5.7
+    image: mysql/mysql-server:8.0.23
     container_name: mysql_db
     environment:
       MYSQL_ROOT_PASSWORD: 0000
