@@ -8,8 +8,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: kaddem_db
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_USER: your_user
+      MYSQL_PASSWORD: your_password
     ports:
       - "3306:3306"
     volumes:
